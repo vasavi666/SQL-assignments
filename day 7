@@ -1,0 +1,5 @@
+SELECT department_id,COUNT(*) AS total_employees
+FROM employees
+GROUP BY department_id
+HAVING COUNT(*) > 2
+ORDER BY total_employees DESC;
